@@ -5,7 +5,25 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% include partials/header.ejs %>
+    <div id="landmain">
+        <div id="aboutree">
+
+        </div>
+        <form class="newuser" action="index.html" method="post">
+          <h3>New User</h3>
+          <h4>first name</h4>
+          <input type="text" name="firstn" value="" placeholder="First">
+          <h4>last name</h4>
+          <input type="text" name="lastn" value="" placeholder="Last">
+          <h4>username</h4>
+          <input type="text" name="newUsern" value="" placeholder="username">
+          <h4>password</h4>
+          <input type="password" name="newPassw" value="" placeholder="Password">
+          <h4>confirm password</h4>
+          <input type="password" name="re-enter" value="" placeholder="re-enter">
+          <button id="getskillpress"type="button" name="button">Become Skilled</button>
+        </form>
+    </div>
   </body>
 </html>
